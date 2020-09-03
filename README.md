@@ -1,5 +1,5 @@
 # Rupa
-**Ru**st Color**pa**nes
+**Ru**st Color**pa**nes  
 Show off your terminal colors!  
 ![](https://modeus.is-inside.me/uoICFLYH.png)
 

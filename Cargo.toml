@@ -1,6 +1,6 @@
 [package]
 name = "rupa"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["TorchedSammy <no@no.no>"]
 edition = "2018"
 

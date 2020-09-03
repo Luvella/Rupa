@@ -7,11 +7,14 @@ fn main() {
 		}
 
 		for color in 0..8 {
-			let mut panepart = format!("████\u{001b}[1m{}", block);
+			let mut panepart = ["████\u{001b}[1m", block].join("");
+
 			if pat == 3 {
-				panepart = String::from("\u{001b}[1m ▀▀▀▀");
+				panepart = "\u{001b}[1m ▀▀▀▀".to_string();
 			}
-			print!("\u{001b}[3{}m{}  \u{001b}[0m", color, panepart);
+
+			let line = &["\u{001b}[3", &color.to_string(), "m", &panepart, "  \u{001b}[0m"].join("");
+			print!("{}", line);
 		}
 
 		print!("\n")

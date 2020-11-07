@@ -4,7 +4,7 @@ Show off your terminal colors!
 ![](https://modeus.is-inside.me/uoICFLYH.png)
 
 # Usage 
-A precompiled binary is provided [here](https://github.com/Luvella/Rupa/releases), or you can [build yourself](#build).
+A precompiled binary is provided [here](https://github.com/TorchedSammy/Rupa/releases), or you can [build yourself](#build).
 
 # Build
 This requires [Rust](https://rust-lang.org) and Cargo.  

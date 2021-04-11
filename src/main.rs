@@ -1,17 +1,13 @@
 fn main() {
     for pat in 0..4 {
-        let mut block = "█";
-
-        if pat == 0 {
-            block = "▄";
-        }
+        let block = if pat == 0 { "▄" } else { "█" };
 
         for color in 0..8 {
-            let mut panepart = ["████\u{001b}[1m", block].join("");
-
-            if pat == 3 {
-                panepart = "\u{001b}[1m ▀▀▀▀".to_string();
-            }
+            let panepart = if pat == 3 {
+                "\u{001b}[1m ▀▀▀▀".to_string()
+            } else {
+                ["████\u{001b}[1m", block].join("")
+            };
 
             let line = &[
                 "\u{001b}[3",
